@@ -1,0 +1,208 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Center the page */
+.users-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f7f9fc;
+  font-family: Arial, sans-serif;
+}
+
+/* Card styling */
+.users-card {
+  width: 80%;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.users-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.users-header h2 {
+  color: #333;
+}
+
+.add-btn {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.add-btn:hover {
+  background-color: #45a049;
+}
+
+/* Table styling */
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.users-table th,
+.users-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.users-table th {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.users-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Buttons */
+.edit-btn,
+.delete-btn {
+  padding: 0.3rem 0.7rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 0.2rem;
+}
+
+.edit-btn {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+.edit-btn:hover {
+  background-color: #1976d2;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
+/* Page background and centering */
+.create-user-page {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: #e8f0ff; /* soft blue */
+}
+
+/* Main card */
+.create-user-card {
+  width: 420px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+.create-user-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1a73e8;
+  font-weight: 600;
+}
+
+/* Form input groups */
+.create-user-card label {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.create-user-card input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c9c9c9;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.create-user-card input:focus {
+  border-color: #1a73e8;
+  box-shadow: 0 0 3px rgba(26, 115, 232, 0.5);
+}
+
+/* Submit button */
+.create-user-card .btn-success {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+}
+.up-btn {
+  display: inline-block;
+  padding: 8px 18px;
+  background-color: #1a73e8;
+  color: white;
+  border-radius: 6px;
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.up-btn:hover {
+  background-color: #155ec2;
+}
