@@ -1,9 +1,10 @@
+import dotenv from "dotenv";
+dotenv.config();
 const express=require('express')
 const mongoose=require('mongoose')
-mongoose.connect("mongodb+srv://User:aso09876@cluster.jiqtsol.mongodb.net/merncrud")
   .then(() => console.log("MongoDB Connected"))
   .catch(err => console.log(err));
-
+mongoose.connect(process.env.MONGO_URI);
 
 const cors=require('cors')
 const UserModel=require('./models/User')
@@ -44,4 +45,5 @@ app.delete('/deleteUser/:id',(req,res)=>{
 app.listen(3001, ()=>{
     console.log("Server is running")
 }
+
 )
